@@ -238,7 +238,7 @@ case $host in
     ;;
   *linux*)
     case `uname -m` in
-      *x86_64*)
+      *x86_64* | *aarch64*)
         SHCFLAGS="$SHCFLAGS -fPIC"
         ;;
     esac
